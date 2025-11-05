@@ -1,0 +1,3 @@
+# 今日水印相机广告拦截
+# 进一步确保 App 所有广告请求被阻断
+PROCESS-NAME=com.daydayup.workcamera
