@@ -1,0 +1,6 @@
+# 今日水印相机广告拦截
+# 封禁广告 + 追踪
+DOMAIN-SUFFIX=faceu.mobi,REJECT
+DOMAIN-SUFFIX=wmapi.cn,REJECT
+# 进一步确保 App 所有广告请求被阻断
+PROCESS-NAME=com.daydayup.workcamera,REJECT-TINYGIF
