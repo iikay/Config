@@ -12,6 +12,10 @@ proxy-providers:
 
 proxies:
   - {name: 直连, type: direct}
+  - {name: VLess, type: vless, server: fwzy.5226688.xyz, port: 21825, uuid: fd3c1fec-0048-479f-afdd-91bdcb4f7980, tls: true, servername: www.apple.com, flow: xtls-rprx-vision, client-fingerprint: chrome, reality-opts: {public-key: i5oXc1B-oWUOTXxoNqRHBxf6slKPfDgxdlZ6mhgDyVI, short-id: ed77ab}}
+  - {name: Anytls, type: anytls, server: fwzy.5226688.xyz, port: 32243, password: 5ocPQABpvP, tls: true, sni: fwzy.5226688.xyz, alpn: [h3, h2, http/1.1], client-fingerprint: chrome}
+  - {name: Hysteria2, type: hysteria2, server: fwzy.5226688.xyz, port: 39482, password: 5ocPQABpvP, tls: true, sni: fwzy.5226688.xyz, alpn: [h3]}
+  - {name: Tuic, type: tuic, server: fwzy.5226688.xyz, port: 11873, uuid: fd3c1fec-0048-479f-afdd-91bdcb4f7980, password: 5ocPQABpvP, tls: true, sni: fwzy.5226688.xyz, alpn: [h3], congestion-controller: cubic, client-fingerprint: chrome}
 
 mixed-port: 7890
 allow-lan: true
