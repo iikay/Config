@@ -81,6 +81,10 @@ proxy-groups:
     type: select
     proxies:
       - Auto
+      - VLess
+      - Anytls
+      - Hysteria2
+      - Tuic
       - 直连
     use:
       - 机场一
@@ -91,6 +95,11 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+    proxies:
+      - VLess
+      - Anytls
+      - Hysteria2
+      - Tuic
     use:
       - 机场一
 
@@ -100,6 +109,10 @@ proxy-groups:
     proxies:
       - Proxy
       - Auto
+      - VLess
+      - Anytls
+      - Hysteria2
+      - Tuic
       - 直连
     use:
       - 机场一
