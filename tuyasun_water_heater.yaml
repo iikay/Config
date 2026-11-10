@@ -1,0 +1,89 @@
+name: TuyaSun Solar Water Heater
+products:
+  - id: ad5xfow4ntyqlbh9
+    name: TuyaSun Solar Water Heater
+entities:
+  # 1. 水温传感器
+  - entity: sensor
+    name: Water Temperature
+    class: temperature
+    dps:
+      - id: 3
+        type: integer
+        name: sensor
+        unit: °C
+        class: measurement
+
+  # 2. 水位传感器
+  - entity: sensor
+    name: Water Level
+    icon: mdi:water-percent
+    dps:
+      - id: 11
+        type: integer
+        name: sensor
+        unit: "%"
+        class: measurement
+
+  # 3. 运行状态传感器
+  - entity: sensor
+    name: Heater Status
+    icon: mdi:information-outline
+    dps:
+      - id: 9
+        type: integer
+        name: sensor
+
+  # 4. 上水开关
+  - entity: switch
+    name: Upwater
+    icon: mdi:water-pump
+    dps:
+      - id: 101
+        type: boolean
+        name: switch
+
+  # 5. 加热开关
+  - entity: switch
+    name: Heat
+    icon: mdi:water-boiler
+    dps:
+      - id: 102
+        type: boolean
+        name: switch
+
+  # 6. 恒温开关
+  - entity: switch
+    name: Temperature Keep
+    icon: mdi:thermometer-auto
+    dps:
+      - id: 103
+        type: boolean
+        name: switch
+
+  # 7. 保水位开关
+  - entity: switch
+    name: Water Keep
+    icon: mdi:water-sync
+    dps:
+      - id: 104
+        type: boolean
+        name: switch
+
+  # 8. 定时加热开关
+  - entity: switch
+    name: Heat Timer
+    icon: mdi:timer-outline
+    dps:
+      - id: 105
+        type: boolean
+        name: switch
+
+  # 9. 定时上水开关
+  - entity: switch
+    name: Upwater Timer
+    icon: mdi:progress-clock
+    dps:
+      - id: 106
+        type: boolean
+        name: switch
